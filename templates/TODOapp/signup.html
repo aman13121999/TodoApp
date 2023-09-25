@@ -1,0 +1,22 @@
+{% extends 'TODOapp/base.html' %}
+   {% block content %}
+   <h1>SignOut Page</h1>
+   <div class="col-lg-5 shadow p-5 mx-auto p-0" >
+     <div class="alert alert-success">
+       <h2>Create New User</h2>
+     </div>
+     <div class="p-4">
+       <form method="post" action="/signup/" >
+         {{ form.as_table}}
+         {% csrf_token%}
+         <input type="submit"  class="btn btn-dark" value="Create Account" >
+     </form>
+     
+     </div>
+     
+   </div>
+      
+   {% endblock  %}
+    
+   
+    
